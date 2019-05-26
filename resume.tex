@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}  
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+\usepackage{enumitem}
+
+
+% Increase text height
+\textheight=1000pt
+
+\setlength{\voffset}{-0.5in}
+\setlength{\headsep}{5pt}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Matthew E. Struble}
+\address{http://www.mattstruble.com}
+
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+%\address{Address 1 line 1\\Address 1 line 2\\Address 1 line 3}
+%\address{Address 2 line 1\\Address 2 line 2\\Address 2 line 3}
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{EDUCATION}
+\phantom{spacing}
+\textbf{Georgia Institute of Technology} \hfill Atlanta, GA\\
+{\sl Master of Science}, Computer Science
+\\
+{\sl Specializations}: Computational Perception and Robotics, Machine Learning
+\\
+August 2017 - Present
+
+\par
+\textbf{Champlain College} \hfill Burlington, VT\\
+{\sl Bachelor of Science}, Game Programming
+\\
+{\sl Minor}: Mathematics
+\\
+August 2011 - May 2015
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}\employer{r}\\
+\dates{l}\location{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+
+\section{EXPERIENCE}
+\phantom{spacing}
+\employer{Raytheon}
+\location{Tewksbury, MA}
+\dates{Oct. 2018 - Mar. 2019}
+\title{\textbf{Senior Software Engineer}}
+\begin{position}\phantom{spacing}
+\begin{itemize}[noitemsep, topsep=0pt]
+\item Responsible for designing, implementing, debugging, and fixing problems with the Radar software applications.
+\item Implemented signal processing algorithms and time critical control functions, involved in direct control of sensor systems. 
+\item Worked with Software Architects and Principal Systems, Hardware, and Software engineers to interpret and implement requirements. 
+\end{itemize}
+\end{position}
+
+\employer{NetNumber}
+\location{Lowell, MA}
+\dates{Jan. 2017 - Oct. 2018}
+\title{\textbf{Software Engineer}}
+\begin{position}\phantom{spacing}
+\begin{itemize}[noitemsep, topsep=0pt]
+\item Implemented and maintained SS7 signaling protocols within product. 
+\item Improved performance and capabilities of signaling routing to fit the needs of customers in emerging markets. 
+\item Autonomously resolved customer support tickets in a timely manner. 
+\end{itemize}
+\end{position}
+
+\employer{General Dynamics MS}
+\location{Pittsfield, MA}
+\dates{Aug. 2016 - Dec. 2017}
+\title{\textbf{Lead Software Engineer}}
+\begin{position}\phantom{spacing}
+\begin{itemize}[noitemsep, topsep=0pt]
+\item Performed scope and cost analysis for software deliverables. 
+\item Updated low-level C drivers for the electric drive motor on the LSV2 upgrade.  
+\item Created and maintained software development plan, software design, and software requirement documents. 
+\end{itemize}
+\end{position}
+
+\dates{May 2016 - Aug. 2016}
+\title{\textbf{Aerospace Software Engineer}}
+\begin{position}\phantom{spacing}
+\begin{itemize}[noitemsep, topsep=0pt]
+\item Architected a software suite tasked with hardware tests in LabWindows (C). 
+\item Processed data in real time for GN\&C Algorithms and post-test analysis. 
+\end{itemize}
+\end{position}
+
+\dates{Jun. 2016 - May 2016}
+\title{\textbf{Software Engineer}}
+\begin{position}\phantom{spacing}
+\begin{itemize}[noitemsep, topsep=0pt]
+\item Designed training software for naval physical security systems. 
+\end{itemize}
+\end{position}
+
+%\employer{Pfizer}
+%\location{Groton, CT}
+%\dates{ May 2014 – Dec. 2014}
+%\title{\textbf{Continuous Improvement Student Worker}}
+%\begin{position}\phantom{spacing}
+%\begin{itemize}[noitemsep, topsep=0pt]
+%\item Created an internal, professional, social media platform to improve company-wide communication.
+%\item Developed applications for both the Raspberry Pi and Google Glass to improve workflow and efficiency within Pfizer.  
+%\item Updated SharePoint sites to improve inter-department communication.
+%\end{itemize}
+%\end{position}
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{SKILLS}
+\phantom{spacing}
+\textbf{Languages}: C, C++, Java, Python, SQL, Bash, SQL, PHP, \LaTeX.
+\\
+\textbf{Applications}: Unity, Vi/Vim, Git/SVN, OpenGL, MATLAB, Flash/Photoshop CS6. 
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\section{PROJECTS}
+\phantom{spacing}
+\par
+\textbf{Hyper Syntax}: 
+A team-built split-screen multiplayer game written in Unity capable of handling four players and thousands of unique on-screen colliders at once. 
+
+\par
+\textbf{Rigid Body Physics Engine}: 
+Utilized OpenGL graphics library in C++ to create an engine capable of handling 3D rigid body collisions in real time. 
+
+
+%-------------------------------------------------------------------------------
+%	Interests
+%-------------------------------------------------------------------------------
+%\section{INTERESTS}
+%Interest One, Interest Two, Interest Three, Interest Four, ...Et Cetera.
+%-------------------------------------------------------------------------------
+\end{resume}
+\end{document}
