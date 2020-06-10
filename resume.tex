@@ -43,7 +43,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \documentclass[margin]{res}  
+
 
 % Default font is the helvetica postscript font
 \usepackage{helvet}
@@ -54,7 +56,11 @@
 \textheight=1000pt
 
 \setlength{\voffset}{-0.25in}
-\setlength{\headsep}{5pt}
+\setlength{\headsep}{-10pt}
+
+
+\usepackage[hidelinks=true, setpagesize={false}]{hyperref}
+\urlstyle{same}
 
 \begin{document}
 
@@ -62,7 +68,7 @@
 %	NAME AND ADDRESS SECTION
 %-------------------------------------------------------------------------------
 \name{{\LARGE Matthew E. Struble}}
-\address{mattstruble@outlook.com}
+\address{\href{mailto:mattstruble@outlook.com}{mattstruble@outlook.com}}
 
 
 % Note that addresses can be used for other contact information:
@@ -207,7 +213,7 @@ August 2011 - May 2015
 %-------------------------------------------------------------------------------
 %	PROJECTS SECTION
 %-------------------------------------------------------------------------------
-\section{Projects}
+\section{Projects} 
 \phantom{spacing}
 \par
 \textbf{Heineken® AR Cheers Campaign}: 
@@ -216,6 +222,8 @@ Utilized Tensorflow to develop an object detection model and integrated it into 
 \par
 \textbf{Analyzing Climate Change Stance Through Twitter Data}:
 Explored multiple natural language processing algorithms in an attempt to understand -- and visualize -- Americans' views of climate change over time.
+
+\hfill See more at \href{http://mattstruble.com}{mattstruble.com}
 
 %\par
 %\textbf{Hyper Syntax}: 
