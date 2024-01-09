@@ -623,16 +623,16 @@
 \tabular@tail={}
 \c@numberofcolumns 0
 \let\\=\end@line@head
-\def\employer##1{\advance\c@numberofcolumns 0
+\def\employer##1{\advance\c@numberofcolumns 1
 	\@format{employer}{##1}
 	\append@tabular@text{employer}}
-\def\location##1{\advance\c@numberofcolumns 0
+\def\location##1{\advance\c@numberofcolumns 1
 	\@format{location}{##1}
 	\append@tabular@text{location}}
-\def\dates##1{\advance\c@numberofcolumns 0
+\def\dates##1{\advance\c@numberofcolumns 1
 	\@format{dates}{##1}
 	\append@tabular@text{dates}}
-\def\title##1{\advance\c@numberofcolumns 0
+\def\title##1{\advance\c@numberofcolumns 1
 	\@format{title}{##1}
 	\append@tabular@text{title}}
 \def\body{\iftoks\tabular@head\undefined@token\then
