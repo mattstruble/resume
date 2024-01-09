@@ -7,7 +7,7 @@
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Rensselaer Polytechnic Institute 
+% Rensselaer Polytechnic Institute
 % (http://www.rpi.edu/dept/arc/training/latex/resumes/)
 %
 % Modified by:
@@ -27,7 +27,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % You can have multiple style options the legal options ones are:
 %
-%   centered:	the name and address are centered at the top of the page 
+%   centered:	the name and address are centered at the top of the page
 %				(default)
 %
 %   line:		the name is the left with a horizontal line then the address to
@@ -36,7 +36,7 @@
 %   overlapped:	the section titles overlap the body text (default)
 %
 %   margin:		the section titles are to the left of the body text
-%		
+%
 %   11pt:		use 11 point fonts instead of 10 point fonts
 %
 %   12pt:		use 12 point fonts instead of 10 point fonts
@@ -44,7 +44,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\documentclass[margin]{res}  
+\documentclass[margin]{res}
 
 
 % Default font is the helvetica postscript font
@@ -59,7 +59,7 @@
 \setlength{\headsep}{-10pt}
 
 
-\usepackage[hidelinks=true, setpagesize={false}]{hyperref}
+\usepackage[hidelinks, setpagesize={false}]{hyperref}
 \urlstyle{same}
 
 \begin{document}
@@ -68,7 +68,7 @@
 %	NAME AND ADDRESS SECTION
 %-------------------------------------------------------------------------------
 \name{{\LARGE Matthew E. Struble}}
-\address{\href{mailto:mattstruble@outlook.com}{mattstruble@outlook.com} $\vert$  \href{https://www.mattstruble.com}{www.mattstruble.com}} 
+\address{\href{mailto:matt@struble.dev}{matt@struble.dev} $\vert$  \href{https://struble.dev}{struble.dev}}
 
 % Note that addresses can be used for other contact information:
 % -phone numbers
@@ -84,178 +84,180 @@
 
 \begin{resume}
 
-%-------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%-------------------------------------------------------------------------------
-\section{Skills}
-\phantom{spacing}
-\par
-\textbf{Languages}: Python, C++, C, SQL, Java, Bash, \LaTeX.
-\\
-\textbf{Packages}: TensorFlow, Keras, OpenCV, NumPy, Scikit-Learn, Pandas, Matplotlib
-\\
-\textbf{Applications}: AWS, Kubeflow, Docker, Jenkins, Airflow, Jupyter, MATLAB, Git. 
-%-------------------------------------------------------------------------------
+	%-------------------------------------------------------------------------------
+	%	COMPUTER SKILLS SECTION
+	%-------------------------------------------------------------------------------
+	\section{Skills}
+	\phantom{spacing}
+	\par
+	\textbf{Languages}: Python, C++, C, SQL, Java, Bash, \LaTeX.
+	\\
+	\textbf{Packages}: TensorFlow, Keras, OpenCV, NumPy, Scikit-Learn, Pandas, Matplotlib.
+	\\
+	\textbf{Applications}: AWS, Kubeflow, Docker, Jenkins, Airflow, Jupyter, MATLAB, Git, Neovim.
+	%-------------------------------------------------------------------------------
 
-%-------------------------------------------------------------------------------
-%	EXPERIENCE SECTION
-%-------------------------------------------------------------------------------
-% Modify the format of each position
-\begin{format}
-\title{l}\employer{r}\\
-\dates{l}\location{r}\\
-\end{format}
+	%-------------------------------------------------------------------------------
+	%	EXPERIENCE SECTION
+	%-------------------------------------------------------------------------------
+	% Modify the format of each position
+	\begin{format}
+		\title{l}\employer{r}\\
+		\dates{l}\location{r}\\
+	\end{format}
 
-\section{Experience}
-\phantom{spacing}
-\employer{Nike}
-\location{Boston, MA}
-\dates{Feb 2021 - Present}
-\title{\textbf{Senior Software Engineer - AI/ML}}
-\begin{position}
-\begin{itemize}[noitemsep, topsep=0pt]
-\item Developed a standardized Python package for AWS, logging, and test reliability, to reduce Data Scientist overhead within Kubeflow environments.
-\item Led the initiative to update repositories and defined engineering best practices, reducing development time and increasing CI/CD reliability within Jenkins. 
-\item Onboarded and supported offshore team by running agile ceremonies and creating documentation on engineering standardization, expectations, and software redesign.
-\item Designed, and implemented, transition from batch file processing to a new API endpoint for forecasting models.
-\end{itemize}
-\end{position}
+	\section{Experience}
+	\phantom{spacing}
+	\employer{Nike}
+	\location{Boston, MA}
+	\dates{Feb 2021 - Present}
+	\title{\textbf{Lead Software Engineer - AI/ML}}
+	\begin{position}
+		\begin{itemize}[noitemsep, topsep=0pt]
+			\item Planned, designed, and performed, multiple cross-team software migrations into AWS SageMaker.
+			\item Optimized PySpark pipelines, drastically reducing model training and inference time, and improving overall model accuracy.
+			\item Developed a standardized Python package for AWS, logging, and test reliability, to reduce Data Scientist overhead within AWS environments.
+			\item Led the initiative to update repositories and defined engineering best practices, reducing development time and increasing CI/CD reliability within Jenkins.
+			\item Onboarded and supported offshore team by running agile ceremonies and creating documentation on engineering standardization, expectations, and software redesign.
+			\item Designed, and implemented, transition from batch file processing to a new API endpoint for forecasting models.
+		\end{itemize}
+	\end{position}
 
 
-\employer{(Under Contract To) Draper}
-\location{Cambridge, MA}
-\dates{Mar. 2019 - Jun. 2020}
-\title{\textbf{Mission Critical Software Engineer}}
-\begin{position}
-\begin{itemize}[noitemsep, topsep=0pt]
-%\item Developed simulator of GNC flight computer, intended to provide a surrogate for integration into larger vehicle simulation and to support mission simulations at the system level.
-%\item Developed simulator of remote terminals in the vehicle, intended to provide a test environment for the development and verification of the flight computer for the vehicle.
-%\item Aggregated multiple flight data sources into one unified database. 
-\item Developed data analytics tools with machine learning algorithms to assist engineers with hardware analysis. 
-\item Processed system data, sensor data, and real time flight data in order to improve GNC algorithms. 
-\item Took on responsibilities of Scrum Master and led CI/CD initiative. 
-\end{itemize}
-\end{position}
+	\employer{(Under Contract To) Draper}
+	\location{Cambridge, MA}
+	\dates{Mar. 2019 - Jun. 2020}
+	\title{\textbf{Mission Critical Software Engineer}}
+	\begin{position}
+		\begin{itemize}[noitemsep, topsep=0pt]
+			%\item Developed simulator of GNC flight computer, intended to provide a surrogate for integration into larger vehicle simulation and to support mission simulations at the system level.
+			%\item Developed simulator of remote terminals in the vehicle, intended to provide a test environment for the development and verification of the flight computer for the vehicle.
+			%\item Aggregated multiple flight data sources into one unified database.
+			\item Developed data analytics tools with machine learning algorithms to assist engineers with hardware analysis.
+			\item Processed system data, sensor data, and real time flight data in order to improve GNC algorithms.
+			\item Took on responsibilities of Scrum Master and led CI/CD initiative.
+		\end{itemize}
+	\end{position}
 
-\employer{(Under Contract To) Raytheon}
-\location{Tewksbury, MA}
-\dates{Oct. 2018 - Mar. 2019}
-\title{\textbf{Senior Software Engineer}}
-\begin{position}
-\begin{itemize}[noitemsep, topsep=0pt]
-%\item Responsible for designing, implementing, debugging, and fixing problems with the Radar software applications.
-\item Implemented signal processing algorithms and time critical control functions, involved in direct control of sensor systems. 
-%\item Worked with Software Architects and Principal Systems, Hardware, and Software engineers to interpret and implement requirements. 
-\end{itemize}
-\end{position}
+	\employer{(Under Contract To) Raytheon}
+	\location{Tewksbury, MA}
+	\dates{Oct. 2018 - Mar. 2019}
+	\title{\textbf{Senior Software Engineer}}
+	\begin{position}
+		\begin{itemize}[noitemsep, topsep=0pt]
+			%\item Responsible for designing, implementing, debugging, and fixing problems with the Radar software applications.
+			\item Implemented signal processing algorithms, and time critical control functions, involved in direct control of sensor systems.
+			      %\item Worked with Software Architects and Principal Systems, Hardware, and Software engineers to interpret and implement requirements.
+		\end{itemize}
+	\end{position}
 
-\employer{NetNumber}
-\location{Lowell, MA}
-\dates{Jan. 2017 - Oct. 2018}
-\title{\textbf{Software Engineer}}
-\begin{position}
-\begin{itemize}[noitemsep, topsep=0pt]
-%\item Implemented and maintained SS7 signaling protocols within product. 
-\item Improved speed, performance, and scalability of signaling routing to fit the needs of customers in emerging markets. 
-\end{itemize}
-\end{position}
+	% \employer{NetNumber}
+	% \location{Lowell, MA}
+	% \dates{Jan. 2017 - Oct. 2018}
+	% \title{\textbf{Software Engineer}}
+	% \begin{position}
+	% 	\begin{itemize}[noitemsep, topsep=0pt]
+	% 		%\item Implemented and maintained SS7 signaling protocols within product.
+	% 		\item Improved speed, performance, and scalability of signaling routing to fit the needs of customers in emerging markets.
+	% 	\end{itemize}
+	% \end{position}
+	%
+	% \employer{General Dynamics MS}
+	% \location{Pittsfield, MA}
+	% \dates{Aug. 2016 - Dec. 2017}
+	% \title{\textbf{Lead Software Engineer}}
+	% \begin{position}
+	% 	\begin{itemize}[noitemsep, topsep=0pt]
+	% 		%\item Performed scope and cost analysis for software deliverables.
+	% 		\item Created and maintained software development plan, software design, and software requirement documents.
+	% 	\end{itemize}
+	% \end{position}
 
-\employer{General Dynamics MS}
-\location{Pittsfield, MA}
-\dates{Aug. 2016 - Dec. 2017}
-\title{\textbf{Lead Software Engineer}}
-\begin{position}
-\begin{itemize}[noitemsep, topsep=0pt]
-%\item Performed scope and cost analysis for software deliverables. 
-\item Created and maintained software development plan, software design, and software requirement documents. 
-\end{itemize}
-\end{position}
+	%\dates{May 2016 - Aug. 2016}
+	%\title{\textbf{Aerospace Software Engineer}}
+	%\begin{position}\phantom{spacing}
+	%\begin{itemize}[noitemsep, topsep=0pt]
+	%\item Architected a software suite tasked with hardware tests in LabWindows (C).
+	%\item Processed data in real time for GN\&C Algorithms and post-test analysis.
+	%\end{itemize}
+	%\end{position}
+	%
+	%\dates{Jun. 2016 - May 2016}
+	%\title{\textbf{Software Engineer}}
+	%\begin{position}\phantom{spacing}
+	%\begin{itemize}[noitemsep, topsep=0pt]
+	%\item Designed training software for naval physical security systems.
+	%\end{itemize}
+	%\end{position}
 
-%\dates{May 2016 - Aug. 2016}
-%\title{\textbf{Aerospace Software Engineer}}
-%\begin{position}\phantom{spacing}
-%\begin{itemize}[noitemsep, topsep=0pt]
-%\item Architected a software suite tasked with hardware tests in LabWindows (C). 
-%\item Processed data in real time for GN\&C Algorithms and post-test analysis. 
-%\end{itemize}
-%\end{position}
-%
-%\dates{Jun. 2016 - May 2016}
-%\title{\textbf{Software Engineer}}
-%\begin{position}\phantom{spacing}
-%\begin{itemize}[noitemsep, topsep=0pt]
-%\item Designed training software for naval physical security systems. 
-%\end{itemize}
-%\end{position}
+	%\employer{Pfizer}
+	%\location{Groton, CT}
+	%\dates{ May 2014 – Dec. 2014}
+	%\title{\textbf{Continuous Improvement Student Worker}}
+	%\begin{position}\phantom{spacing}
+	%\begin{itemize}[noitemsep, topsep=0pt]
+	%\item Created an internal, professional, social media platform to improve company-wide communication.
+	%\item Developed applications for both the Raspberry Pi and Google Glass to improve workflow and efficiency within Pfizer.
+	%\item Updated SharePoint sites to improve inter-department communication.
+	%\end{itemize}
+	%\end{position}
+	%-------------------------------------------------------------------------------
 
-%\employer{Pfizer}
-%\location{Groton, CT}
-%\dates{ May 2014 – Dec. 2014}
-%\title{\textbf{Continuous Improvement Student Worker}}
-%\begin{position}\phantom{spacing}
-%\begin{itemize}[noitemsep, topsep=0pt]
-%\item Created an internal, professional, social media platform to improve company-wide communication.
-%\item Developed applications for both the Raspberry Pi and Google Glass to improve workflow and efficiency within Pfizer.  
-%\item Updated SharePoint sites to improve inter-department communication.
-%\end{itemize}
-%\end{position}
-%-------------------------------------------------------------------------------
+	%-------------------------------------------------------------------------------
+	%	PROJECTS SECTION
+	%-------------------------------------------------------------------------------
+	\section{Projects}
+	\phantom{spacing}
+	\par
+	\textbf{Deep Learning Photo Aesthetics}:
+	Researched modern classification models, and developed supporting tools, in order to create a novel deep learning model to classify photo aesthetics.
 
-%-------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%-------------------------------------------------------------------------------
-\section{Projects} 
-\phantom{spacing}
-\par
-\textbf{Deep Learning Photo Aesthetics}: 
-Researched modern classification models, and developed supporting tools, in order to create a novel deep learning model to classify photo aesthetics. 
+	\par
+	\textbf{Heineken\textsuperscript{\textregistered} AR Cheers Campaign}:
+	Created an object detection model on AWS for an adaptive AR experience.
+	%Utilized TensorFlow to develop an object detection model and integrated it into an adaptive AR experience for a Heineken promotional campaign.
 
-\par
-\textbf{Heineken\textsuperscript{\textregistered} AR Cheers Campaign}: 
-Created an object detection model on AWS for an adaptive AR experience.
-%Utilized TensorFlow to develop an object detection model and integrated it into an adaptive AR experience for a Heineken promotional campaign. 
+	\par
+	\textbf{Analyzing Climate Change Stance Through Twitter Data}:
+	Tested multiple NLP algorithms like bag of words, ensemble, and BERT, in an attempt to understand -- and visualize -- Americans' views of climate change over time.
 
-%\par
-%\textbf{Analyzing Climate Change Stance Through Twitter Data}:
-%Tested multiple NLP algorithms like bag of words, ensemble, and BERT, in an attempt to understand -- and visualize -- Americans' views of climate change over time.
+	\hfill See blog and more projects at \href{https://struble.dev}{struble.dev}
 
-\hfill See blog and more projects at \href{http://mattstruble.com}{mattstruble.com}
+	%\par
+	%\textbf{Hyper Syntax}:
+	%A team-built split-screen multiplayer game written in Unity capable of handling four players and thousands of unique on-screen colliders at once.
 
-%\par
-%\textbf{Hyper Syntax}: 
-%A team-built split-screen multiplayer game written in Unity capable of handling four players and thousands of unique on-screen colliders at once. 
+	%\par
+	%\textbf{Rigid Body Physics Engine}:
+	%Utilized OpenGL graphics library in C++ to create an engine capable of handling 3D rigid body collisions in real time.
 
-%\par
-%\textbf{Rigid Body Physics Engine}: 
-%Utilized OpenGL graphics library in C++ to create an engine capable of handling 3D rigid body collisions in real time. 
+	%\par
+	%\textbf{Genetic Algorithm}:
+	%Researched and implemented a custom genetic algorithm for handling backend game logic.
 
-%\par
-%\textbf{Genetic Algorithm}:
-%Researched and implemented a custom genetic algorithm for handling backend game logic.
+	%-------------------------------------------------------------------------------
 
-%-------------------------------------------------------------------------------
+	%-------------------------------------------------------------------------------
+	%	EDUCATION SECTION
+	%-------------------------------------------------------------------------------
+	\section{Education}
+	\phantom{spacing}
+	\par
+	\textbf{Georgia Institute of Technology} \hfill Atlanta, GA\\
+	{\sl Master of Science}, Computer Science $\vert$ \\
+	Machine Learning, Computational Perception and Robotics
 
-%-------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%-------------------------------------------------------------------------------
-\section{Education}
-\phantom{spacing}
-\par
-\textbf{Georgia Institute of Technology} \hfill Atlanta, GA\\
-{\sl Master of Science}, Computer Science $\vert$ \\
-Machine Learning, Computational Perception and Robotics
+	\par
+	\textbf{Champlain College} \hfill Burlington, VT\\
+	{\sl Bachelor of Science}, Game Programming $\vert$ {\sl Minor}: Mathematics
 
-\par
-\textbf{Champlain College} \hfill Burlington, VT\\
-{\sl Bachelor of Science}, Game Programming $\vert$ {\sl Minor}: Mathematics
+	%-------------------------------------------------------------------------------
 
-%-------------------------------------------------------------------------------
-
-%-------------------------------------------------------------------------------
-%	Interests
-%-------------------------------------------------------------------------------
-%\section{INTERESTS}
-%Interest One, Interest Two, Interest Three, Interest Four, ...Et Cetera.
-%-------------------------------------------------------------------------------
+	%-------------------------------------------------------------------------------
+	%	Interests
+	%-------------------------------------------------------------------------------
+	%\section{INTERESTS}
+	%Interest One, Interest Two, Interest Three, Interest Four, ...Et Cetera.
+	%-------------------------------------------------------------------------------
 \end{resume}
 \end{document}
