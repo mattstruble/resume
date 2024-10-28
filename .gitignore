@@ -217,7 +217,7 @@ TSWLatexianTemp*
 ## Editors:
 # WinEdt
 *.bak
-*.sav
+*.save
 
 # Texpad
 .texpadtmp
@@ -240,3 +240,6 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+node_modules/
+public/
