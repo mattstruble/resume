@@ -12,7 +12,7 @@
     <div class="contact">
       {{#exists basics.email}}<a href="mailto:{{basics.email}}">{{basics.email}}</a>{{/exists}}
       {{#if (and basics.email basics.url)}}<span class="sep">|</span>{{/if}}
-      {{#exists basics.url}}<a href="{{basics.url}}">{{basics.url}}</a>{{/exists}}
+      {{#exists basics.url}}<a href="{{basics.url}}">{{displayUrl basics.url}}</a>{{/exists}}
     </div>
   </header>
 

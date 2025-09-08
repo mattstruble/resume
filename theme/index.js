@@ -44,6 +44,16 @@ Handlebars.registerHelper('exists', function(v, options) {
     : options.inverse(this);
 });
 
+Handlebars.registerHelper('displayUrl', function(url) {
+  if (!url) return '';
+  try {
+    const u = new URL(url);
+    return (u.host + (u.pathname === '/' ? '' : u.pathname));
+  } catch (e) {
+    return url.replace(/^https?:\/\//, '');
+  }
+});
+
 const template = Handlebars.compile(loadFile('resume.hbs'));
 const style = loadFile('style.css');
 
