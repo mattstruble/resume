@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matthew E. Struble — Resume</title>
   <style>:root {
-  --section-width: 7.5rem;
+  --section-width: 0.8in;
   --text-color: #111;
   --muted-color: #444;
   --accent-color: #111;
@@ -25,11 +25,11 @@ html, body {
 /* Header (centered name & contact) */
 .header {
   text-align: center;
-  margin: 16px 0 8px 0;
+  margin: 8px 0 6px 0;
 }
 .name {
-  margin: 0 0 4px 0;
-  font-size: 24px;
+  margin: 0 0 2px 0;
+  font-size: 22px;
   font-weight: 700;
 }
 .contact { color: var(--muted-color); }
@@ -49,7 +49,7 @@ html, body {
   grid-template-columns: var(--section-width) 1fr;
   column-gap: 12px;
   align-items: start;
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 .section-title {
@@ -67,20 +67,21 @@ html, body {
   grid-template-columns: 1fr 1fr;
   column-gap: 8px;
 }
-.work-row .left { text-align: left; font-weight: 600; }
-.work-row .right { text-align: right; font-weight: 600; }
+.work-row .left { text-align: left; font-weight: 700; }
+.work-row .right { text-align: right; font-weight: 400; }
 .work-row.sub .left,
 .work-row.sub .right { color: var(--muted-color); font-weight: 400; }
 
 .bullets {
-  margin: 4px 0 0 0;
-  padding-left: 16px;
+  margin: 2px 0 0 0;
+  padding-left: 14px;
 }
-.bullets li { margin: 2px 0; }
+.bullets li { margin: 1px 0; }
 
 /* Key-value lines for Skills */
 .kv { display: grid; grid-template-columns: 10rem 1fr; column-gap: 8px; }
-.kv .k { font-weight: 600; }
+.kv .k { font-weight: 700; }
+.kv .k::after { content: ':'; margin-left: 2px; }
 .kv .v { color: var(--muted-color); }
 
 /* Projects */
@@ -93,6 +94,7 @@ html, body {
 .edu { margin: 6px 0; }
 .edu-top { display: grid; grid-template-columns: 1fr auto; }
 .edu-bottom { color: var(--muted-color); }
+.edu-bottom .degree { font-style: italic; }
 .edu .sep { margin: 0 6px; color: var(--muted-color); }
 
 /* Print */
