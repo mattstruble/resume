@@ -118,7 +118,8 @@
     {
       "institution": "Champlain College",
       "location": "Burlington, VT",
-      "area": "Game Programming (Minor: Mathematics)",
+      "area": "Game Programming",
+      "minor": "Mathematics",
       "studyType": "Bachelor of Science"
     }
   ]

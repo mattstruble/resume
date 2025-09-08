@@ -87,9 +87,14 @@
               <span class="loc">{{location}}</span>
             </div>
             <div class="edu-bottom">
-              <span class="degree">{{studyType}}</span>
-              {{#if area}}<span class="sep">|</span><span class="area">{{area}}</span>{{/if}}
+              <span class="degree">{{studyType}}</span>{{#if area}},{{/if}}
+              {{#if area}} <span class="area">{{area}}</span>{{/if}}
+              {{#if courses}}<span class="sep">|</span>{{/if}}
+              {{#if minor}} <span class="degree">Minor:</span> <span class="area">{{minor}}</span>{{/if}}
             </div>
+            {{#if courses}}
+              <div class="edu-courses">{{join courses ", "}}</div>
+            {{/if}}
           </div>
         {{/each}}
       </div>

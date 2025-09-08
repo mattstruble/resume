@@ -11,8 +11,8 @@ html, body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, Helvetica, "Liberation Sans", sans-serif;
-  font-size: 12px;
+  font-family: "Helvetica", "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
+  font-size: 11px;
   line-height: 1.35;
 }
 
@@ -23,7 +23,7 @@ html, body {
 }
 .name {
   margin: 0 0 2px 0;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
 }
 .contact { color: var(--muted-color); }
@@ -33,10 +33,13 @@ html, body {
 /* Two-column section with left margin title */
 .content {
   width: 100%;
-  max-width: 900px;
+  max-width: calc(6.5in + var(--section-width));
   margin: 0 auto;
   padding: 4px 16px 24px 16px;
 }
+
+/* links: hide color/underline like LaTeX hidelinks */
+a { color: inherit; text-decoration: none; }
 
 .section {
   display: grid;
