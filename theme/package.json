@@ -1,0 +1,11 @@
+{
+  "name": "jsonresume-theme-latex-margin",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}
+

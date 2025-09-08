@@ -1,0 +1,14 @@
+{
+  "name": "resume-json",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build:html": "resume export dist/index.html --resume resume.json --theme ./theme",
+    "build:pdf": "resume export dist/resume.pdf --resume resume.json --theme ./theme",
+    "start": "resume serve --resume resume.json --theme ./theme --port 4000"
+  },
+  "devDependencies": {
+    "resume-cli": "^3.0.9"
+  }
+}
+

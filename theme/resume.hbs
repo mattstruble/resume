@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{basics.name}} — Resume</title>
+  <style>{{{style}}}</style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="name">{{basics.name}}</h1>
+    <div class="contact">
+      {{#exists basics.email}}<a href="mailto:{{basics.email}}">{{basics.email}}</a>{{/exists}}
+      {{#if (and basics.email basics.url)}}<span class="sep">|</span>{{/if}}
+      {{#exists basics.url}}<a href="{{basics.url}}">{{basics.url}}</a>{{/exists}}
+    </div>
+  </header>
+
+  <main class="content">
+    {{#exists skills}}
+    <section class="section">
+      <div class="section-title">Skills</div>
+      <div class="section-body">
+        {{#each skills}}
+          <div class="kv">
+            <span class="k">{{name}}</span>
+            <span class="v">{{join keywords ", "}}</span>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+    {{/exists}}
+
+    {{#exists work}}
+    <section class="section">
+      <div class="section-title">Experience</div>
+      <div class="section-body">
+        {{#each work}}
+          <article class="work">
+            <div class="work-row">
+              <div class="left">{{position}}</div>
+              <div class="right">{{name}}</div>
+            </div>
+            <div class="work-row sub">
+              <div class="left">{{dateRange startDate endDate}}</div>
+              <div class="right">{{location}}</div>
+            </div>
+            {{#exists highlights}}
+              <ul class="bullets">
+                {{#each highlights}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            {{/exists}}
+          </article>
+        {{/each}}
+      </div>
+    </section>
+    {{/exists}}
+
+    {{#exists projects}}
+    <section class="section">
+      <div class="section-title">Projects</div>
+      <div class="section-body">
+        {{#each projects}}
+          <div class="project">
+            <div class="project-name">{{#if url}}<a href="{{url}}">{{name}}</a>{{else}}{{name}}{{/if}}</div>
+            {{#exists highlights}}
+              {{#each highlights}}
+                <div class="project-desc">{{this}}</div>
+              {{/each}}
+            {{/exists}}
+          </div>
+        {{/each}}
+      </div>
+    </section>
+    {{/exists}}
+
+    {{#exists education}}
+    <section class="section">
+      <div class="section-title">Education</div>
+      <div class="section-body">
+        {{#each education}}
+          <div class="edu">
+            <div class="edu-top">
+              <span class="inst">{{institution}}</span>
+              <span class="loc">{{location}}</span>
+            </div>
+            <div class="edu-bottom">
+              <span class="degree">{{studyType}}</span>
+              {{#if area}}<span class="sep">|</span><span class="area">{{area}}</span>{{/if}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+    {{/exists}}
+  </main>
+</body>
+</html>
+
