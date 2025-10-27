@@ -1,0 +1,103 @@
+:root {
+  --section-width: 0.8in;
+  --text-color: #000;
+  --muted-color: #000;
+  --accent-color: #000;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.28;
+}
+
+/* Header (centered name & contact) */
+.header {
+  text-align: center;
+  margin: 8px 0 6px 0;
+}
+.name {
+  margin: 0 0 2px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.contact { color: var(--muted-color); }
+.contact a { color: inherit; text-decoration: none; }
+.contact .sep { margin: 0 6px; }
+
+/* Two-column section with left margin title */
+.content {
+  width: 100%;
+  max-width: calc(6.5in + var(--section-width));
+  margin: 0 auto;
+  padding: 4px 16px 24px 16px;
+}
+
+/* links: hide color/underline like LaTeX hidelinks */
+a { color: inherit; text-decoration: none; }
+
+.section {
+  display: grid;
+  grid-template-columns: var(--section-width) 1fr;
+  column-gap: 12px;
+  align-items: start;
+  padding-top: 8px;
+}
+
+.section-title {
+  font-weight: 700;
+  text-transform: none;
+  color: var(--accent-color);
+}
+
+.section-body { min-width: 0; }
+
+/* Work entries mimic LaTeX layout */
+.work { margin-bottom: 8px; }
+.work-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+}
+.work-row .left { text-align: left; font-weight: 700; }
+.work-row .right { text-align: right; font-weight: 400; }
+.work-row.sub .left,
+.work-row.sub .right { color: var(--muted-color); font-weight: 400; }
+
+.bullets {
+  margin: 2px 0 0 0;
+  padding-left: 14px;
+}
+.bullets li { margin: 1px 0; }
+
+/* Key-value lines for Skills */
+.kv { display: grid; grid-template-columns: 9rem 1fr; column-gap: 8px; }
+.kv .k { font-weight: 700; }
+.kv .k::after { content: ':'; margin-left: 2px; }
+.kv .v { color: var(--muted-color); }
+
+/* Projects */
+.project { margin: 6px 0; }
+.project-name { font-weight: 600; }
+.project-desc { color: var(--muted-color); }
+.project a { color: inherit; text-decoration: none; }
+
+/* Education */
+.edu { margin: 6px 0; }
+.edu-top { display: grid; grid-template-columns: 1fr auto; }
+.edu-bottom { color: var(--muted-color); }
+.edu-bottom .degree { font-style: italic; }
+.edu .sep { margin: 0 6px; color: var(--muted-color); }
+
+/* Print */
+@media print {
+  html, body { font-size: 10pt; }
+  .content { padding: 0 8px; }
+  a { text-decoration: none; color: inherit; }
+}
+
